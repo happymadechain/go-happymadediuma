@@ -21,7 +21,7 @@ Section "Uninstall"
   SimpleFC::AdvRemoveRule "Ghpmc outgoing peers (TCP:33860)"
   SimpleFC::AdvRemoveRule "Ghpmc UDP discovery (UDP:33860)"
 
-  # Remove IPC endpoint (https://github.com/happymadediumchain/EIPs/issues/147)
+  # Remove IPC endpoint (https://github.com/happymadechain/EIPs/issues/147)
   ${un.EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\ghpmc.ipc"
 
   # Remove install directory from PATH
